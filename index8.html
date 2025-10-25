@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang= "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal blog homepage</title>
+    </head>
+    <style>
+
+        body{
+            max-width: 900px;
+            background-color: mintcream;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .posts{
+            Display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 10px;
+        }   
+        
+        .post1{
+            grid-area: 1 / 1 / 2 / 3;
+
+        }
+
+        .post2{
+            grid-area: 1 / 3 / 2 / 5;
+        }
+
+        .post3{
+            grid-area: 2 / 1 / 3 / 3;
+        }
+
+        .post4{
+            grid-area: 2 / 3 / 3 / 5;
+        }
+
+
+        h1{
+            color: blue;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3rem;
+            background-color: lawngreen;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            background-color: turquoise;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a:hover{
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        img{
+            width: 150px;
+            margin-top: 10px;
+        }
+
+    
+        .featured-post{
+            width: 300px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        .blog{
+            width: 200px;
+            margin-top: 20px;
+        }
+
+        footer{
+            margin-top: 50px;
+            background-color: lawngreen;
+            text-align: center;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        button{
+            margin-bottom: 20px;
+        }
+
+        
+
+        @media(max-width:600px){
+            .posts{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .blog{
+                width: 400px;
+            }
+            
+            img{
+                width: 100%;
+                height: auto;
+            }
+
+            .featured-post img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+       
+
+
+
+
+        
+
+
+        
+    </style>
+    <body>
+        <h1>Patrick's Blog</h1>
+
+        <nav>
+            <a href="../4.1 Webpages/public/about.html"> About section</a>
+            <a href="../4.1 Webpages/public/contact.html"> Contact </a>
+            <a href="../4.3 HTML Portfolio Project/4.3 HTML Porfolio Project/public/Hobbies.html">Hobbies</a>
+        </nav>
+
+        <section class="featured-post">
+            <h2>The featured article</h2>
+            <img src="../4.1 Webpages/assets/images/cat.png" alt="Featured image"/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua.</p>
+
+        </section>
+        <hr />
+
+            
+        <section class="posts">
+            <div class=" blog post1">
+                <h2>Blog post 1</h2>
+                <img src="../4.1 Webpages/assets/images/cat.png" alt="Featured image"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            </div>
+            
+            <div class=" blog post2">
+                <h2>Blog post 2</h2>
+                <img src="../4.1 Webpages/assets/images/cat.png" alt="Featured image"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            </div>
+
+            <div class=" blog post3">
+                <h2>Blog post 3</h2>
+                <img src="../4.1 Webpages/assets/images/cat.png" alt="Featured image"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            </div>
+
+            <div class=" blog post4">
+                <h2>Blog post 4</h2>
+                <img src="../4.1 Webpages/assets/images/cat.png" alt="Featured image"/>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.</p>
+            </div>
+            <hr />
+
+        </section>
+
+        <footer>
+            <p>&copy; 2025, my personal blog. All rights reserved. @Patrickegbuchua</p>
+        </footer>
+        <br />
+        <a href="../Assignment 8/index8.html"><button>Back to the top</button></a>
+    </body>
+</html>    
+
